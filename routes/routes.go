@@ -7,4 +7,6 @@ import (
 
 func WebRoutes(app *fiber.App) {
 	app.Get("/", controllers.HomeIndex)
+	app.Get("/contact", controllers.ContactUs)
+	app.Get("/about", controllers.AboutUs)
 }
